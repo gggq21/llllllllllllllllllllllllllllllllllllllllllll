@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lemon</title>
-    <!-- Добавляем фавикон -->
+    
     <link rel="icon" href="lemon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="lemon.ico" type="image/x-icon">
     <style>
@@ -70,7 +70,7 @@
     let countdown = 5;
 
     startButton.addEventListener('click', function() {
-        // Воспроизведение звука немедленно после нажатия кнопки
+        
         audioElement.play().catch(function(error) {
             console.log("Autoplay was prevented: ", error);
         });
@@ -86,7 +86,7 @@
                 clearInterval(interval);
                 countdownElement.style.display = 'none';
 
-                // Show the appropriate image based on screen size
+                
                 if (window.innerWidth >= 768) {
                     imageDesktop.style.display = 'block';
                 } else {
